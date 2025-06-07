@@ -11,7 +11,7 @@ func commandExplore(cfg *config, args ...string) error {
 	}
 
 	name := args[0]
-  fmt.Printf("Exploring %s...\n", name)
+	fmt.Printf("Exploring %s...\n", name)
 	location, err := cfg.pokeapiClient.GetLocation(name)
 	if err != nil {
 		return err
