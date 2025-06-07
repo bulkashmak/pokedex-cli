@@ -21,12 +21,13 @@ func commandCatch(cfg *config, args ...string) error {
 
 	canCatch := tryToCatch(pokemon.BaseExperience)
 
-	if canCatch {
-		cfg.pokedex[pokemonName] = pokemon
-		fmt.Printf("%s was caught!\n", pokemonName)
-	} else {
+	if !canCatch {
 		fmt.Printf("%s excaped!\n", pokemonName)
+		return nil
 	}
+
+	cfg.pokedex[pokemon.Name] = pokemon
+	fmt.Printf("%s was caught!\n", pokemon.Name)
 
 	return nil
 }
