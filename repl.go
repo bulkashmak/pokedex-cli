@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bulkashmak/pokedexcli/internal/pokeapi"
+	"github.com/bulkashmak/pokedex-cli/internal/pokeapi"
 )
 
 type config struct {

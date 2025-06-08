@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/bulkashmak/pokedexcli/internal/pokecache"
+	"github.com/bulkashmak/pokedex-cli/internal/pokecache"
 )
 
 // Client -
